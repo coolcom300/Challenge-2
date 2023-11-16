@@ -25,5 +25,9 @@ public class Spin : MonoBehaviour
         {
             body.angularVelocity = trans.up*speed;
         }
+        else
+        {
+            body.angularVelocity = Vector3.zero;
+        }
     }
 }
