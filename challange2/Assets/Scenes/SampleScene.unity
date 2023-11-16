@@ -1022,13 +1022,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: LazerEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 2156646693922140515, guid: fdfbb0b69118578468a275e239223e98, type: 3}
-      propertyPath: m_Enabled
-      value: 0
+    - target: {fileID: 2704498914649034610, guid: fdfbb0b69118578468a275e239223e98, type: 3}
+      propertyPath: rotSpeed
+      value: 7200
       objectReference: {fileID: 0}
     - target: {fileID: 5628603970249197568, guid: fdfbb0b69118578468a275e239223e98, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.85
+      value: 8.49
       objectReference: {fileID: 0}
     - target: {fileID: 5628603970249197568, guid: fdfbb0b69118578468a275e239223e98, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1036,7 +1036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5628603970249197568, guid: fdfbb0b69118578468a275e239223e98, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.64
       objectReference: {fileID: 0}
     - target: {fileID: 5628603970249197568, guid: fdfbb0b69118578468a275e239223e98, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1066,24 +1066,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7493484520527360219, guid: fdfbb0b69118578468a275e239223e98, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493484520527360219, guid: fdfbb0b69118578468a275e239223e98, type: 3}
-      propertyPath: m_WalkableMask
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493484520527360219, guid: fdfbb0b69118578468a275e239223e98, type: 3}
-      propertyPath: m_ObstacleAvoidanceType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8378472007468224865, guid: fdfbb0b69118578468a275e239223e98, type: 3}
-      propertyPath: attacking
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2156646693922140515, guid: fdfbb0b69118578468a275e239223e98, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

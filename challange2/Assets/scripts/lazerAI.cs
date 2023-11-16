@@ -23,29 +23,38 @@ public class lazerAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    //    if (attacking)
-    //    {
-    //        agent.angularSpeed = attackRot;
-    //        agent.speed = attackSpeed;
-    //    }
-    //    else
-    //    {
-    //        agent.angularSpeed = idleRot;
-    //        agent.speed = idleSpeed;
-    //    }
+        if (attacking)
+        {
+            agent.angularSpeed = attackRot;
+            agent.speed = attackSpeed;
+        }
+        else
+        {
+            agent.angularSpeed = idleRot;
+            agent.speed = idleSpeed;
+        }
         target = GameObject.FindWithTag("Player");
         agent.destination = target.transform.position;
     }
 
     private void OnTriggerStay(Collider other)
     {
-        attacking = true;
-        Attack();
+        if (other.tag == "Player")
+        {
+            attacking = true;
+        }
+        else
+        {
+            attacking = false;
+        }
+        //attacking = true;
+        //Attack();
     }
 
-    void Attack()
-    {
-        agent.angularSpeed = attackRot;
-        agent.speed = attackSpeed;
-    }
+    //void Attack()
+    //{
+    //    if (attacking) { }
+    //    agent.angularSpeed = attackRot;
+    //    agent.speed = attackSpeed;
+    //}
 }
