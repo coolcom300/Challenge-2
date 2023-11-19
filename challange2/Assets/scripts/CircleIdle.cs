@@ -11,7 +11,8 @@ public class CircleIdle : State
     NavMeshAgent agent;
     public CircleAttack attackState;
     public CircleTheAI circleState;
-    float timer;
+    public Spin spin;
+    public float timer,attackTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,13 @@ public class CircleIdle : State
     }
     public override State RunCurrentState()
     {
+        if (timer == 0)
+        {   
+            
+            timer = Time.time;
+        }
         agent.enabled = true;
+        spin.spin = true;
         target = GameObject.FindWithTag("Enemy");
         if (target == this.gameObject)
         {
@@ -33,20 +40,19 @@ public class CircleIdle : State
         }
         target = GameObject.FindWithTag("Player");
         //Vector3.RotateTowards(trans.);
-        if (timer == 0)
-        {   
-            
-            timer = Time.time;
-        }
-        if(Time.time - timer < 11)
+        
+        if(Time.time - timer < attackTime)
         {
             
             return this;
         }
         else
         {   
+            Debug.Log("leaveIdle/enterAttack");
             timer = 0;
+            spin.spin = false;
             return attackState;
+            
         }
         
     }

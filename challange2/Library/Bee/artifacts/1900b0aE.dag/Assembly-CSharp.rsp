@@ -374,6 +374,7 @@
 "Assets/KevinCastejon/StateMachines/HierarchicalFiniteStateMachine/Demo/TicTacToeDemo/Scripts/MainStateMachine.cs"
 "Assets/KevinCastejon/StateMachines/HierarchicalFiniteStateMachine/Demo/TicTacToeDemo/Scripts/MainStateMachineComponent.cs"
 "Assets/KevinCastejon/StateMachines/HierarchicalFiniteStateMachine/Demo/TicTacToeDemo/Scripts/Tile.cs"
+"Assets/RotationBlocker.cs"
 "Assets/scripts/Attacking.cs"
 "Assets/scripts/CircleAI.cs"
 "Assets/scripts/CircleAttack.cs"

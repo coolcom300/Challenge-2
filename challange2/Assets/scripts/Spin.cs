@@ -27,6 +27,7 @@ public class Spin : MonoBehaviour
         }
         else
         {
+
             body.angularVelocity = Vector3.zero;
         }
     }
